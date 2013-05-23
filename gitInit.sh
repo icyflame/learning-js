@@ -52,5 +52,7 @@ echo 'Changes comitted to the git repository'
 echo 'Press return key to exit'
 read
 
+git remote add origin
+
 
 
