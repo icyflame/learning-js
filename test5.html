@@ -1,0 +1,30 @@
+<HTML>
+
+<HEAD>
+
+<TITLE> SHOW DATE </TITLE>
+
+<BODY>
+
+<p id='date'> </p>
+
+</BODY>
+
+</HTML>
+
+</HEAD>
+
+<script>
+
+var b = document.getElementById('date');
+
+today = new Date();
+
+//b.innerHTML += "<br>Today\'s Date is:<br><br>" + today.toDateString();
+
+/*the above thing is used to format the date. but it shows date only. as i wanted both
+date and time that is why i used the following code:*/
+
+b.innerHTML += "<br>Date and Time: " + today;
+
+</script>

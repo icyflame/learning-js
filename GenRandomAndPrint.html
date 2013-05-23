@@ -1,0 +1,43 @@
+<HTML>
+
+<HEAD>
+
+<TITLE> GENERATE RANDOM NUMBERS AND PRINT THEM </TITLE>
+
+<BODY>
+
+<div id='container'>
+
+<button onclick='startPrinting()'>Generate random numbers </button>
+
+</div>
+
+</BODY>
+
+</HTML>
+
+</HEAD>
+
+<script>
+
+function startPrinting()
+{
+
+var b = document.getElementById('container');
+
+//b.innerHTML += Math.floor(Math.random() * 1000);
+
+b.innerHTML += '<br>The following are some random numbers.<br>';
+
+for(var i =1;i<10;i++)
+{
+
+b.innerHTML += '<br>';
+
+b.innerHTML += i + '.' + Math.floor(Math.random() * 1000);
+
+}
+
+}
+
+</script>

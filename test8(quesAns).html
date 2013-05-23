@@ -1,0 +1,51 @@
+<HTML>
+
+<HEAD>
+
+<BODY>
+
+<div id='ques1'>
+    
+    <p> 
+        What is the name of the wizard in JK rowling's novel? 
+    </p>
+    
+    <input id='ans1' type='text'> </input>
+    
+    <button onclick='getScore()'>Submit</button>
+    
+</div>
+
+<p id='res'> </p>
+
+</BODY>
+
+</HTML>
+
+</HEAD>
+
+<script>
+
+function getScore()
+{
+    var b = document.getElementById('ans1');
+    
+    //alert(b.value)
+    
+    var answer1 = b.value;
+    
+    var result = document.getElementById('res');
+    
+    if(answer1 == 'harry potter')
+        
+        result.innerHTML = '<br>score = 1!';
+    
+    else
+        
+        result.innerHTML = '<br>Wrong answer!';
+    
+    return;
+    
+}
+
+</script>

@@ -1,0 +1,47 @@
+<HTML>
+
+<HEAD>
+
+<TITLE> SAY HI TO THE USER. APPEND HIS NAME TOO </TITLE>
+
+<BODY>
+
+<p id='question'>
+
+Enter your name: <input type='text' id='name1'> </input>
+
+</p>
+
+<button onclick="matchItAll()"> Submit </button>
+
+<p id='greet'> </p>
+
+</BODY>
+
+</HTML>
+
+</HEAD>
+
+<script>
+
+function matchItAll()
+
+{
+
+//alert(document.getElementById('name1').value);
+
+var b = document.getElementById('greet');
+
+
+
+//var box = document.getElementById(name1);
+
+var nameOfUser = document.getElementById('name1').value;
+
+alert(nameOfUser);
+
+b.innerHTML += "<br> Hi, " + document.getElementById('name1').value;
+
+}
+
+</script>

@@ -1,0 +1,59 @@
+<HTML>
+
+<TITLE> ASKING TWO QUESTIONS TO THE USER </TITLE>
+
+<HEAD>
+
+<BODY>
+
+<p> Answer the following questions: <br><pre>
+
+	1. What is the name of the main character in J K Rowling's novels?
+	
+	<input type=text id='ans1'>
+	
+	2. Who is the author of 'Famous Five'>
+	
+	<input type=text id='ans2'>
+	
+</pre>	
+<br>
+
+<button onclick='getscore()'>Submit answers </button>
+
+<div id='result'> </div>
+
+</BODY>
+
+</HTML>
+
+</HEAD>
+
+<script>
+
+function getscore()
+{
+
+	var a,b;
+	
+	a = document.getElementById('ans1').value;
+	
+	b = document.getElementById('ans2').value;
+	
+	var score = 0;
+	
+	if(a.toLowerCase() == 'harry potter')
+	
+		score += 1;
+		
+	if(b.toLowerCase() == 'enid blyton')
+	
+		score += 1;
+		
+	document.getElementById('result').innerHTML = '<br><br>Your score is ' + score; 
+	
+	return;
+	
+}
+
+</script>
